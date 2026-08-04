@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 // const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-const GA_ID = 'G-N7XHX5NLC7'
+const GA_ID = 'G-X8ZSQYXZW7'
 
 import "./frostify-cleaned-global.css"
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
