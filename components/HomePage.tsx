@@ -78,7 +78,8 @@ export default function HomePage() {
             <div className="center">
               <p className="eyebrow">Our Services</p>
               <h2>Choose Your Appliance Repair Service</h2>
-              <p>Service-specific pages for AC, Washing Machine and Refrigerator with instant WhatsApp booking.</p>
+              <p>Every appliance is built differently, featuring complex electrical circuits, specialized mechanical parts, and advanced software boards (PCBs). Our technicians possess deep diagnostic knowledge and multi-brand expertise to handle an expansive range of appliance breakdowns.</p>
+              {/* <p>Service-specific pages for AC, Washing Machine and Refrigerator with instant WhatsApp booking.</p> */}
             </div>
             <div className="serviceGrid">
               {services.map((service) => (
@@ -124,6 +125,7 @@ export default function HomePage() {
             <div className="center">
               <p className="eyebrow">Location Coverage</p>
               <h2>Service Locations Across Mumbai</h2>
+              <p>With an expansive and well-coordinated network of mobile technicians, Frostify Service Center brings premium doorstep appliance repair solutions to residential and commercial customers across Mumbai, Navi Mumbai, Thane, and nearby regions.Our technicians are strategically placed to guarantee rapid travel times to the following prominent neighborhoods:</p>
               <p>Our technicians provide doorstep appliance repair services across Mumbai, Navi Mumbai, Thane and nearby locations.</p>
             </div>
             <div className="chips">
@@ -136,8 +138,18 @@ export default function HomePage() {
           <div className="container">
             <div className="center">
               <p className="eyebrow">Brand Support</p>
-              <h2>We Service All Major Brands</h2>
+              <h2>Multi-Brand Support Expertise</h2>
               <p>Brand names are used only to identify appliance compatibility and repair expertise.</p>
+               <p>Even though we operate as an independent service provider, our technicians
+                    continuously train on the unique systems and technologies used by leading
+                    global appliance brands. This enables us to deliver professional,
+                    authorized-level repair expertise at competitive third-party service rates.
+                  </p>
+
+                  <p>
+                    We proudly support, diagnose, and repair appliances from the following
+                    major manufacturers:
+                  </p>
             </div>
             <div className="brandGrid">
               {brandGroups.map((group) => (
@@ -152,12 +164,94 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section id="d" className="section darkSec">
+          <div className="container ">
+             <p className="eyebrow">A Diagnostic Guide</p>
+              <h2>Understanding Your Appliance Issues </h2>
+               <p>To help you identify when it is time to call in the professionals, here is a quick overview of common symptoms that indicate your home appliance requires immediate repair or maintenance.</p> 
+             <div className="contactBox">  
+                <h3> When to Call an AC Technician </h3>
+                <p> .The unit blows air, but the room temperature does not drop
+                </p>
+                <p>.Water drops or streams down continuously from the indoor AC unit casing
+                </p>
+                <p>.The outdoor unit fails to turn on, or makes a loud, grinding metallic noise.
+
+                </p>
+                <p>.The AC switches off automatically within minutes of starting (short-cycling)
+                </p>
+                <p>.An unpleasant, musty odor fills the room whenever you switch on the machine.
+                </p>
+            </div>
+              <br />
+               <div className="contactBox"> 
+                <h3>When Your Washing Machine Needs Attention</h3>
+                <p>.The clothes emerge completely soaking wet, indicating a failure to spin or drain.</p>
+                <p>.The machine fills with water but the drum remains completely stationary.</p>
+                <p>.Water pools around the base of the machine during a wash cycle.</p>
+                <p>.The digital display flashes unfamiliar error codes and halts mid-cycle.</p>
+                <p>.The machine shakes violently, moving away from its designated wall spot during the spin cycle.</p>
+               </div>
+ <br />
+               <div className="contactBox"> 
+                <h3>Signs Your Refrigerator is Struggling</h3>
+                <p>Food in the fresh food compartment spoils rapidly or turns warm.</p>
+                <p>Ice sheets form excessively fast on the walls of the freezer compartment.</p>
+                <p>The refrigerator makes a loud clicking or buzzing noise every few minutes.</p>
+                <p>You notice water pooling at the bottom of the vegetable crisper drawers.</p>
+                <p>The exterior sides of the refrigerator cabinet feel abnormally hot to the touch.</p>
+              </div>
+
+          </div>
+        </section>
+
+         <section id="contact" className="section contactSec">
+          <div className="container ">
+            <p className="eyebrow"> FAQs</p>
+              <h2>Frequently Asked Questions</h2>
+                   <br />
+                        <br />
+            <div className="contactBox">
+              <h3>Q1. Is Frostify Service Center an authorized brand dealer?</h3>
+              <p>No. Frostify Service Center is an independent third-party appliance repair and maintenance service provider. We are not an authorized service center, authorized dealer, agent, or official representative of Samsung, LG, Whirlpool, Bosch, IFB, Daikin, Voltas, Blue Star, Haier, Godrej, Panasonic, Hitachi, Carrier, or any other brand mentioned on this website. All brand names, logos, and trademarks are the exclusive property of their respective owners and are used purely for identification and service compatibility purposes.</p>
+            </div>
+            <br />
+            <div className="contactBox">
+              <h3>Q2. How quickly can a technician visit my home?</h3>
+              <p>We consistently offer same-day appliance repair services across Mumbai, Navi Mumbai, and Thane. Appointments are scheduled based on the real-time availability of technicians in your localized neighborhood. Once you initiate contact via phone or WhatsApp, our backend team works instantly to assign the closest available expert to you.</p>
+            </div>
+            <br />
+            <div className="contactBox">
+              <h3>Q3. Do you provide a warranty on the repairs performed?</h3>
+              <p>Yes, we do. To instill complete confidence and peace of mind, Frostify Service Center backs its repair support with a dedicated service and parts warranty. The precise duration of the warranty varies depending on the type of appliance and the specific spare parts replaced during the job. Our technicians will clarify these details upfront.</p>
+            </div>
+            <br />
+            <div className="contactBox">
+              <h3>Q4. Are there any hidden costs in your pricing structure?</h3>
+              <p>Absolutely not. We take immense pride in our transparent pricing policy. Our technician will thoroughly inspect your appliance at your doorstep, diagnose the primary breakdown, and present a clear breakdown of service charges before starting any physical repair work. You only pay the mutually agreed-upon amount once the repair is completed successfully.</p>
+            </div>
+            <br />
+            <div className="contactBox">
+              <h3>Q5. Can you handle smart, inverter-based home appliances?</h3>
+              <p>Yes, our technical team possesses specialized expertise in modern home electronics. We regularly repair high-end inverter ACs, smart frost-free side-by-side refrigerators, and fully automatic front-load washing machines equipped with digital inverter motors and advanced PCB control systems.</p>
+            </div>
+            <br />
+
+
+          </div>
+          </section>
+
         <section id="contact" className="section contactSec">
           <div className="container contactGrid">
             <div>
               <p className="eyebrow">Book Service</p>
-              <h2>Need Urgent Appliance Repair?</h2>
-              <p>Call or WhatsApp Frostify Service Center for AC, Washing Machine or Refrigerator repair service.</p>
+              <h2>Book Your Doorstep Repair Service Instantly</h2>
+              <p>Do not let a broken appliance disrupt your household peace, comfort, and safety. Get your home back to full efficiency with reliable, fast, and professional support from Mumbai's trusted appliance repair experts.</p>
+              <p>Booking a doorstep service with Frostify Service Center is incredibly easy. You can call us directly or drop us a quick text message to describe your appliance issues. Our responsive customer support desk is active from 9:00 AM to 9:00 PM to register your requests and dispatch help immediately.</p>
+              <br />
+              <h3>Contact Frostify Service Center now and let our multi-brand specialists restore your AC, washing machine, or refrigerator to perfect working health today!</h3>
+              <br />
+              {/* <p>Call or WhatsApp Frostify Service Center for AC, Washing Machine or Refrigerator repair service.</p> */}
               <div className="heroActions">
                 <a className="btn primary" href={`tel:${PHONE}`}>Call {PHONE_DISPLAY}</a>
                 <a className="btn whatsapp" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
@@ -171,6 +265,7 @@ export default function HomePage() {
               {/* <p>📍 Mumbai, Navi Mumbai & Thane</p> */}
             </div>
           </div>
+          
         </section>
 
         <section id="disclaimer" className="disclaimer">
@@ -184,6 +279,8 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+
+
       </main>
 
       <footer className="footer">
