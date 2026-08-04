@@ -34,10 +34,12 @@ export const metadata: Metadata = {
       },
     ],
   },
-
+  verification: {
+    google: "google79da3292d15f967",
+  },
   manifest: "images/f_favicon_io/site.webmanifest",
 
-
+  
 
   metadataBase: new URL(SITE_URL),
   themeColor: "#ff6a00",
@@ -68,7 +70,10 @@ export const metadata: Metadata = {
     description: "AC, washing machine and refrigerator repair service in Mumbai."
   },
   robots: { index: true, follow: true }
+
+  
 };
+
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
